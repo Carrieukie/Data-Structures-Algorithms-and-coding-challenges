@@ -49,9 +49,7 @@ public class GoogleSnapshot {
             }
             int arraysize = endpointer - startpointer + 1;
             int localmax = arraysize - (arraysize - occurences.get(key) ) + 3;
-            if (localmax >= arraysize){
-                ans = Math.max(localmax,ans);
-            }
+            ans = Math.max(localmax,ans);
         }
         return  ans;
     }
