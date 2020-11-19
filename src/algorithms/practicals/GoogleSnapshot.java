@@ -1,8 +1,10 @@
+package algorithms.practicals;
+
 import java.util.*;
 
 public class GoogleSnapshot {
     public static void main(String[] args) {
-        int[] array = {1, -10, 0, 10, 6, 8, -10};
+        int[] array = { 1,2,7,8,3,45};
         System.out.println(solution(array));
     }
 //[0,0,1,1,1,2,2,3,3,4]
@@ -21,7 +23,6 @@ public class GoogleSnapshot {
             return A.length;
         }
         Map<Integer, Integer> occurences = new HashMap<>();
-
         for (int i = 0; i < A.length; i++) {
            if (occurences.containsKey(A[i])){
                occurences.put(A[i],occurences.get(A[i]) + 1);
@@ -29,7 +30,6 @@ public class GoogleSnapshot {
                occurences.put(A[i],1);
            }
         }
-        System.out.println(occurences);
         int ans = 0;
         for (int key : occurences.keySet()){
             int startpointer = 0;

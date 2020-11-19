@@ -1,11 +1,28 @@
+package algorithms.practicals;
+
 import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        Integer array[] = new Integer[]{5,4,3,6};
-        System.out.println(solution(array));
-        Integer loads[] = new Integer[]{1,2,3,4,5};
-        System.out.println(loads(loads));
+
+
+//        Integer array[] = new Integer[]{5,4,3,6};
+//        System.out.println(solution(array));
+//        Integer loads[] = new Integer[]{1,2,3,4,5};
+//        System.out.println(loads(loads));
+//        squareroot(25);
+    }
+
+    static void squareroot(int n){
+        int p = 0;
+        //02
+        //1
+        for (int i = 1; p <=n ; i++) {
+            System.out.println("p is " + p + " i is " + i);
+            p = p + i;
+        }
     }
 //    nums = [2,7,11,15], target = 9
 //    static int[] target(Integer[] nums, int target){
